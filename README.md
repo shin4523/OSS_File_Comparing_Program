@@ -1,4 +1,4 @@
-#Assignment2
+ssignment2
 팀장
 2017202090 강성운 (Id: clover7kso, SubId: clover7ksw)
 팀원
