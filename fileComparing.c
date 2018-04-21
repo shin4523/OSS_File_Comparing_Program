@@ -56,9 +56,55 @@ void blockcmp(void)
 
 void datecmp(void)
 {
+	if(time1.tm_mon>time2.tm_mon)
+   	{
+      		printf("text2 date is earlier\n");
+   	}
+   	else if(time2.tm_mon>time1.tm_mon)
+   	{
+      		printf("text1 date is earlier\n");
+   	}
+   	else
+   	{
+      		if(time1.tm_mday>time2.tm_mday)
+      		{
+         		printf("text2 date is earlier\n");
+      		}
+      		else if(time2.tm_mday>time1.tm_mday)
+      		{
+         		printf("text1 date is earlier\n");
+      		}
+      		else
+      		{
+         		printf("same date\n");
+      		}
+   	}
 }
 
 void timecmp(void)
 {
+	if(time1.tm_hour>time2.tm_hour)
+   	{
+      		printf("text2 time is earlier\n");
+   	}
+   	else if(time2.tm_hour>time1.tm_hour)
+   	{
+      		printf("text1 time is earlier\n");
+   	}
+   	else
+   	{
+      		if(time1.tm_min>time2.tm_min)
+      		{
+         		printf("text2 time is earlier\n");
+      		}
+      		else if(time2.tm_min>time1.tm_min)
+      		{
+         		printf("text1 time is earlier\n");
+      		}
+      		else
+      		{
+         		printf("same time\n");
+      		}
+   	}
 }
 
